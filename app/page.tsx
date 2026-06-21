@@ -3,31 +3,53 @@ import Footer from "@/components/Footer";
 
 const services = [
   {
-    icon: "🌿",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 19h18M7 19V14c-1-1-1-3 0-5M12 19V12c-1-2-1-4 0-6M17 19V14c1-1 1-3 0-5" />
+      </svg>
+    ),
     title: "Lawn Care",
     description:
       "Mowing, edging, trimming, and blowing on a schedule that keeps your lawn healthy and sharp all season.",
   },
   {
-    icon: "🪵",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+        <path strokeLinecap="round" d="M3 9h18M3 13h18M3 17h18" />
+      </svg>
+    ),
     title: "Mulching Magic",
     description:
       "Fresh mulch to clean up your beds, lock in moisture, and keep the weeds down.",
   },
   {
-    icon: "🍂",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21V14M12 14c-2 0-6-3-6-8a6 6 0 0 1 12 0c0 5-4 8-6 8z" />
+      </svg>
+    ),
     title: "Seasonal Cleanups",
     description:
       "Clearing leaves, debris, and yard waste so your property stays tidy through the seasons.",
   },
   {
-    icon: "🏠",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 11.5L12 4l9 7.5M5 11.5V19h14v-7.5M10 19v-4h4v4" />
+        <path strokeLinecap="round" d="M9 22l.5-2M12 22l.5-2M15 22l.5-2" />
+      </svg>
+    ),
     title: "Gutter Cleaning",
     description:
       "Clearing your gutters to protect your home from water damage, pests, and roof problems.",
   },
   {
-    icon: "✂️",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M5 18h14M7 18a5 5 0 0 1 10 0M5 14a7 7 0 0 1 14 0" />
+        <path strokeLinecap="round" d="M12 14V9M9.5 11.5l2.5-2.5 2.5 2.5" />
+      </svg>
+    ),
     title: "Shrub Sculpting",
     description:
       "Trimming and shaping shrubs to keep your landscape clean, healthy, and looking sharp.",
@@ -37,11 +59,7 @@ const services = [
 const reviews = [
   {
     name: "Tosha Sweat",
-    text: "Reached out to Brandon in the hopes of finding quality expert home lawn care while helping a local small business. Brandon showed up, took measurements, we had a brief chat and I was on his schedule within a week. Very affordable, reliable and meticulous with detail. He treated my fence areas and around my house for weeds as part of the package. He also looks out for my pups outside and lets me know if he sees anything amiss while he’s here. Professional and courteous all the time. As a Veteran household, I’m proud that we can help a local family owned Veteran business here in High Springs.",
-  },
-  {
-    name: "Mischa Sachmorov",
-    text: "Amazing lawn care provider. It’s rare to find someone who cares so much and gives you individual attention. Brandon is always so thoughtful and caring and always does an amazing job. I really can’t recommend him enough.",
+    text: "Reached out to Brandon in the hopes of finding quality expert home lawn care while helping a local small business. Brandon showed up, took measurements, we had a brief chat and I was on his schedule within a week. Very affordable, reliable and meticulous with detail. He treated my fence areas and around my house for weeds as part of the package. He also looks out for my pups outside and lets me know if he sees anything amiss while he's here. Professional and courteous all the time. As a Veteran household, I'm proud that we can help a local family owned Veteran business here in High Springs.",
   },
   {
     name: "Monica Acevedo",
@@ -49,9 +67,15 @@ const reviews = [
   },
   {
     name: "Rob Swan",
-    text: "I’m so happy I found Wicked Good. They are the best. Friendly, professional, and thorough.",
+    text: "I'm so happy I found Wicked Good. They are the best. Friendly, professional, and thorough.",
   },
 ];
+
+const CheckIcon = () => (
+  <svg className="w-5 h-5 text-green-600 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+  </svg>
+);
 
 export default function Home() {
   return (
@@ -104,7 +128,7 @@ export default function Home() {
                 key={service.title}
                 className="bg-green-50 border border-green-100 rounded-2xl p-6 hover:shadow-md transition-shadow"
               >
-                <div className="text-4xl mb-4">{service.icon}</div>
+                <div className="text-green-600 mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{service.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
               </div>
@@ -140,7 +164,7 @@ export default function Home() {
                 "Easy to reach, and we actually communicate.",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span className="mt-1 text-green-600 font-bold text-lg leading-none">✓</span>
+                  <CheckIcon />
                   <span className="text-gray-700">{item}</span>
                 </li>
               ))}
@@ -191,13 +215,13 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-gray-900 mb-3">What Customers Say</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
             {reviews.map((review) => (
               <div
                 key={review.name}
                 className="bg-gray-50 border border-gray-200 rounded-2xl p-6"
               >
-                <div className="text-yellow-400 text-xl mb-3" aria-label="5 stars">★★★★★</div>
+                <div className="text-yellow-400 text-xl mb-3" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                 <p className="text-gray-700 text-sm leading-relaxed mb-4">{review.text}</p>
                 <p className="font-bold text-gray-900 text-sm">{review.name}</p>
               </div>
