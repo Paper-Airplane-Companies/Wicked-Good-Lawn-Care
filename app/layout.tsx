@@ -8,9 +8,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Wicked Good Lawn Care | Professional Lawn Services",
+  title: "Wicked Good Lawn Care | Veteran-Owned Lawn Care in Alachua County, FL",
   description:
-    "Wicked Good Lawn Care delivers reliable, professional lawn mowing, fertilization, and seasonal cleanup services. Get a free quote today.",
+    "Veteran-owned, insured lawn care serving Alachua County and the surrounding area. Mowing, mulching, seasonal cleanups, gutter cleaning, and shrub trimming. Get a free quote today.",
 };
 
 export default function RootLayout({
