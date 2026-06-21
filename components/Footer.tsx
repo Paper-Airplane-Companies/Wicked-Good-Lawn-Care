@@ -129,6 +129,16 @@ export default function Footer() {
                   YouTube
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@wickedgoodlawn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-green-300 hover:text-white transition-colors"
+                >
+                  TikTok
+                </a>
+              </li>
             </ul>
           </div>
         </div>
