@@ -90,7 +90,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-gray-900 mb-3">What We Do</h2>
             <p className="text-gray-500 text-lg max-w-xl mx-auto">
-              From weekly mowing to full seasonal care — we handle it so you don't have to.
+              From weekly mowing to full seasonal care — we handle it so you don&apos;t have to.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -133,10 +133,10 @@ export default function Home() {
       <section id="contact" className="bg-green-700 py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
-            Ready for a Lawn You'll Love?
+            Ready for a Lawn You&apos;ll Love?
           </h2>
           <p className="text-green-100 text-lg mb-10">
-            Get in touch for a free, no-pressure quote. We'll be in touch within one business day.
+            Get in touch for a free, no-pressure quote. We&apos;ll be in touch within one business day.
           </p>
           <form className="bg-white rounded-2xl p-8 text-left max-w-xl mx-auto shadow-xl">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
