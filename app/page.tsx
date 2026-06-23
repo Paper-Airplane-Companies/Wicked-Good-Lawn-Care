@@ -1,9 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const services = [
   {
+    href: "/services/lawn-mowing",
     photo: "/images/services/lawn-care.jpg",
     photoAlt: "Zero-turn mower creating perfect stripes on a green lawn",
     icon: (
@@ -16,6 +18,7 @@ const services = [
       "Mowing, edging, trimming, and blowing on a schedule that keeps your lawn healthy and sharp all season.",
   },
   {
+    href: "/services/mulching",
     photo: "/images/services/mulching.jpg",
     photoAlt: "Freshly mulched curved driveway island bed with shaped shrubs",
     icon: (
@@ -28,6 +31,7 @@ const services = [
       "Fresh mulch to clean up your beds, lock in moisture, and keep the weeds down.",
   },
   {
+    href: "/services/seasonal-cleanup",
     photo: "/images/services/cleanups.jpg",
     photoAlt: "Crew loading brush and debris clippings into a trailer",
     icon: (
@@ -40,6 +44,7 @@ const services = [
       "Clearing leaves, debris, and yard waste so your property stays tidy through the seasons.",
   },
   {
+    href: "/services/gutter-cleaning",
     photo: "/images/services/gutters.jpg",
     photoAlt: "Crew member on tall ladder working at height with WGLC trailer visible",
     icon: (
@@ -53,6 +58,7 @@ const services = [
       "Clearing your gutters to protect your home from water damage, pests, and roof problems.",
   },
   {
+    href: "/services/shrub-sculpting",
     photo: "/images/services/shrubs.jpg",
     photoAlt: "Crew member in branded WGLC shirt using pole hedge trimmer on large shrub",
     icon: (
@@ -143,9 +149,10 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => (
-              <div
+              <Link
                 key={service.title}
-                className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow"
+                href={service.href}
+                className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow group"
               >
                 <div className="relative h-48">
                   <Image
@@ -160,8 +167,11 @@ export default function Home() {
                   <div className="text-green-600 mb-3">{service.icon}</div>
                   <h3 className="text-xl font-bold text-gray-800 mb-2">{service.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
+                  <p className="text-green-700 text-sm font-semibold mt-4 group-hover:underline">
+                    Learn more &rarr;
+                  </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -260,6 +270,58 @@ export default function Home() {
           >
             Shop Sunday and Save 25%
           </a>
+        </div>
+      </section>
+
+      {/* Book Section */}
+      <section className="py-20 px-4 bg-green-900">
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center gap-10">
+          {/* Book cover */}
+          <div className="shrink-0 w-44 h-64 rounded-lg shadow-2xl border-l-8 border-green-500 bg-green-950 flex flex-col items-center justify-center p-5 text-center">
+            <p className="text-green-400 text-[8px] font-bold uppercase tracking-widest mb-1">
+              Playbook for a
+            </p>
+            <p className="text-white font-extrabold text-base leading-snug mb-2">
+              Wicked Good Lawn
+            </p>
+            <div className="w-6 h-px bg-green-500 mb-2" />
+            <p className="text-green-200 text-[10px] leading-snug mb-3">
+              Contemporary Lawn Care Advice for Savvy Homeowners
+            </p>
+            <p className="text-green-400 text-[10px]">Brandon Labonte</p>
+          </div>
+
+          {/* Text */}
+          <div>
+            <p className="text-green-400 text-xs font-bold uppercase tracking-widest mb-2">
+              The Book
+            </p>
+            <h2 className="text-3xl font-extrabold text-white mb-3">
+              Playbook for a Wicked Good Lawn
+            </h2>
+            <p className="text-green-200 text-lg mb-2">
+              Contemporary Lawn Care Advice for Savvy Homeowners
+            </p>
+            <p className="text-gray-300 mb-6">
+              Practical lawn care guidance for North Florida homeowners, written by Brandon Labonte. Available on Amazon.
+            </p>
+            <div className="flex flex-col sm:flex-row items-start gap-4">
+              <a
+                href="https://amzn.to/4eWR76V"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-yellow-500 hover:bg-yellow-400 text-white font-bold px-7 py-3 rounded-xl text-base transition-colors"
+              >
+                Buy on Amazon
+              </a>
+              <Link
+                href="/book"
+                className="inline-block text-green-300 hover:text-white text-sm font-medium transition-colors self-center"
+              >
+                Learn more &rarr;
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 

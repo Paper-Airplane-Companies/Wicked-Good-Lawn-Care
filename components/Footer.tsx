@@ -62,6 +62,7 @@ export default function Footer() {
               <li><a href="/#about" className="text-green-300 hover:text-white transition-colors">About</a></li>
               <li><a href="/gallery" className="text-green-300 hover:text-white transition-colors">Gallery</a></li>
               <li><a href="/blog" className="text-green-300 hover:text-white transition-colors">Blog</a></li>
+              <li><a href="/book" className="text-green-300 hover:text-white transition-colors">Book</a></li>
               <li><a href="/#contact" className="text-green-300 hover:text-white transition-colors">Get a Quote</a></li>
               <li>
                 <a href="https://www.measuremylawn.com/" target="_blank" rel="noopener noreferrer" className="text-green-300 hover:text-white transition-colors">
