@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Summer Survival Guide"
 author: "Brandon Labonte"
 date: ""
 slug: "summer-survival-guide"

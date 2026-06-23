@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Product Comparisons for the Savvy Homeowner"
 author: "Brandon Labonte"
 date: ""
 slug: "product-comparisons-for-the-savvy-homeowner"

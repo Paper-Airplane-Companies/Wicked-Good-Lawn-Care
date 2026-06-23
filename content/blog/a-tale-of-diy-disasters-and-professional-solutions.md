@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "A Tale of DIY Disasters and Professional Solutions"
 author: "Brandon Labonte"
 date: ""
 slug: "a-tale-of-diy-disasters-and-professional-solutions"

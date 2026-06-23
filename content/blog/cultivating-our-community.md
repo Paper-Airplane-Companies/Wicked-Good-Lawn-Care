@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Cultivating Our Community"
 author: "Brandon Labonte"
 date: ""
 slug: "cultivating-our-community"

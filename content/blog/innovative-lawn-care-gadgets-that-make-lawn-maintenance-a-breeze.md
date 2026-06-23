@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Innovative Lawn Care Gadgets That Make Lawn Maintenance a Breeze"
 author: "Brandon Labonte"
 date: ""
 slug: "innovative-lawn-care-gadgets-that-make-lawn-maintenance-a-breeze"

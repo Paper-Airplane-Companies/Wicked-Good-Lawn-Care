@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Protect Your Family and Lawn Understanding Tick and Mosquito Risks"
 author: "Brandon Labonte"
 date: ""
 slug: "protect-your-family-and-lawn-understanding-tick-and-mosquito-risks"

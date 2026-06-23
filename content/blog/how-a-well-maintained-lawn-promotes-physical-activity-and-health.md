@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "How a Well Maintained Lawn Promotes Physical Activity and Health"
 author: "Brandon Labonte"
 date: ""
 slug: "how-a-well-maintained-lawn-promotes-physical-activity-and-health"

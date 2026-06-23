@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Winter Wonders Embracing the Season with Family Warmth and a Well Cared for Lawn"
 author: "Brandon Labonte"
 date: ""
 slug: "winter-wonders-embracing-the-season-with-family-warmth-and-a-well-cared-for-lawn"

@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "The Parallels Between Raising a Kindergartner and Growing a Healthy Lawn"
 author: "Brandon Labonte"
 date: ""
 slug: "the-parallels-between-raising-a-kindergartner-and-growing-a-healthy-lawn"

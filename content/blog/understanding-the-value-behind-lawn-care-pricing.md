@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Understanding the Value Behind Lawn Care Pricing"
 author: "Brandon Labonte"
 date: ""
 slug: "understanding-the-value-behind-lawn-care-pricing"

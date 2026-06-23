@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "The Grass Is Always Greener on the Other Side of the Fence Where They're on Vacation"
 author: "Brandon Labonte"
 date: ""
 slug: "the-grass-is-always-greener-on-the-other-side-of-the-fence-where-they-re-on-vacation"

@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Nutrient Nirvana Unlocking the Secrets to Spring Fertilizer"
 author: "Brandon Labonte"
 date: ""
 slug: "nutrient-nirvana-unlocking-the-secrets-to-spring-fertilizer"

@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Mastering Seasonal Turf Care: Maximizing Success in Florida's Climate"
 author: "Brandon Labonte"
 date: ""
 slug: "mastering-seasonal-turf-care-maximizing-success-in-florida-s-climate-with-wicked-good-lawn-care"

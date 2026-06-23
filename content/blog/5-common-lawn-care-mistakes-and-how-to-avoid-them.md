@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "5 Common Lawn Care Mistakes and How to Avoid Them"
 author: "Brandon Labonte"
 date: ""
 slug: "5-common-lawn-care-mistakes-and-how-to-avoid-them"

@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "The Joys of a Job Well Done"
 author: "Brandon Labonte"
 date: ""
 slug: "the-joys-of-a-job-well-done"

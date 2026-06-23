@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "New Year Lawn Goals and Planning Ahead"
 author: "Brandon Labonte"
 date: ""
 slug: "new-year-lawn-goals-and-planning-ahead"

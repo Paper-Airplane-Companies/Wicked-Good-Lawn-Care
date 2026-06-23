@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Balancing Emotions and Metrics in Business"
 author: "Brandon Labonte"
 date: ""
 slug: "balancing-emotions-and-metrics-in-business"

@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Lawn Care Confessions Restroom Mishaps from the Field"
 author: "Brandon Labonte"
 date: ""
 slug: "lawn-care-confessions-restroom-mishaps-from-the-field"

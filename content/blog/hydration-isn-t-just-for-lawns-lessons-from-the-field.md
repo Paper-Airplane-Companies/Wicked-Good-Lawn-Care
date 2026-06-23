@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Hydration Isn't Just for Lawns: Lessons from the Field"
 author: "Brandon Labonte"
 date: ""
 slug: "hydration-isn-t-just-for-lawns-lessons-from-the-field"

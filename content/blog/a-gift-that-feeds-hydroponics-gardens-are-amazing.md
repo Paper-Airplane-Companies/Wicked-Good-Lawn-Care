@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "A Gift That Feeds Hydroponics Gardens Are Amazing"
 author: "Brandon Labonte"
 date: ""
 slug: "a-gift-that-feeds-hydroponics-gardens-are-amazing"

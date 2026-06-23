@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Perspective from the Owner's Chair"
 author: "Brandon Labonte"
 date: ""
 slug: "perspective-from-the-owner-s-chair"

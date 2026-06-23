@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Growing Beyond the Lawn Cultivating Wellness and Strength in the New Year"
 author: "Brandon Labonte"
 date: ""
 slug: "growing-beyond-the-lawn-cultivating-wellness-and-strength-in-the-new-year"

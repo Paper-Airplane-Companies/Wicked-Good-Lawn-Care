@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "The Role of Chemicals in Lawn Care"
 author: "Brandon Labonte"
 date: ""
 slug: "the-role-of-chemicals-in-lawn-care"

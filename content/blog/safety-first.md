@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Safety First"
 author: "Brandon Labonte"
 date: ""
 slug: "safety-first"

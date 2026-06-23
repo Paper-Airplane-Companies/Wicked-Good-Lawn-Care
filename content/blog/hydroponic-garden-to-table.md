@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Hydroponic Garden to Table"
 author: "Brandon Labonte"
 date: ""
 slug: "hydroponic-garden-to-table"

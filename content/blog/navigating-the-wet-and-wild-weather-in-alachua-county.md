@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Navigating the Wet and Wild Weather in Alachua County"
 author: "Brandon Labonte"
 date: ""
 slug: "navigating-the-wet-and-wild-weather-in-alachua-county"

@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Essential PPE for Every Homeowner"
 author: "Brandon Labonte"
 date: ""
 slug: "essential-ppe-for-every-homeowner"

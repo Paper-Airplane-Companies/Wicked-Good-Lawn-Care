@@ -45,7 +45,13 @@ export default function BlogPage() {
                   </>
                 )}
               </p>
-              <p className="text-gray-700 leading-relaxed">{post.excerpt}</p>
+              <p className="text-gray-700 leading-relaxed mb-4">{post.excerpt}</p>
+              <Link
+                href={`/blog/${post.slug}`}
+                className="text-green-700 font-medium hover:underline"
+              >
+                Read more &rarr;
+              </Link>
             </article>
           ))}
         </div>

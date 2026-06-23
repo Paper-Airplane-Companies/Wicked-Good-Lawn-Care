@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Transforming Doubt Into Delight: A Tale of Customer Satisfaction"
 author: "Brandon Labonte"
 date: ""
 slug: "transforming-doubt-into-delight-a-tale-of-customer-satisfaction-with-wicked-good-lawn-care"

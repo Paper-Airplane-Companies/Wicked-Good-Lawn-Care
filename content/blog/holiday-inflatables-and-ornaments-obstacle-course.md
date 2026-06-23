@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Holiday Inflatables and Ornaments Obstacle Course"
 author: "Brandon Labonte"
 date: ""
 slug: "holiday-inflatables-and-ornaments-obstacle-course"

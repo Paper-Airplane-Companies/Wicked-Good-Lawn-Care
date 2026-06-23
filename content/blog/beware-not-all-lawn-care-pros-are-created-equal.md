@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Beware Not All Lawn Care Pros Are Created Equal"
 author: "Brandon Labonte"
 date: ""
 slug: "beware-not-all-lawn-care-pros-are-created-equal"

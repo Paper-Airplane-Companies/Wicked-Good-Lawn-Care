@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Making Every Minute Count"
 author: "Brandon Labonte"
 date: ""
 slug: "making-every-minute-count"

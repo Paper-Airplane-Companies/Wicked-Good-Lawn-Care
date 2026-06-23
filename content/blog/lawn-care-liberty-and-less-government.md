@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Lawn Care Liberty and Less Government"
 author: "Brandon Labonte"
 date: ""
 slug: "lawn-care-liberty-and-less-government"

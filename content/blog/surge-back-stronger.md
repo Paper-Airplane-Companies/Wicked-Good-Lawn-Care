@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "Surge Back Stronger"
 author: "Brandon Labonte"
 date: ""
 slug: "surge-back-stronger"

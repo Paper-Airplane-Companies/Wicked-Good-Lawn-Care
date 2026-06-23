@@ -1,5 +1,5 @@
 ﻿---
-title: ""
+title: "How to Handle an Angry HOA Homeowner and Prevent Escalation"
 author: "Brandon Labonte"
 date: ""
 slug: "how-to-handle-an-angry-hoa-homeowner-and-prevent-escalation"
