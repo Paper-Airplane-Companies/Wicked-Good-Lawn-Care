@@ -28,7 +28,7 @@ export default function BlogPage() {
               className="border-b border-gray-200 pb-8 last:border-0"
             >
               <Link href={`/blog/${post.slug}`}>
-                <h2 className="text-2xl font-semibold text-green-700 hover:text-green-900 transition-colors mb-2">
+                <h2 className="text-2xl font-bold text-green-700 hover:text-green-900 transition-colors mb-1">
                   {post.title}
                 </h2>
               </Link>
@@ -45,13 +45,7 @@ export default function BlogPage() {
                   </>
                 )}
               </p>
-              <p className="text-gray-700 leading-relaxed mb-4">{post.excerpt}</p>
-              <Link
-                href={`/blog/${post.slug}`}
-                className="text-green-700 font-medium hover:underline"
-              >
-                Read more &rarr;
-              </Link>
+              <p className="text-gray-700 leading-relaxed">{post.excerpt}</p>
             </article>
           ))}
         </div>
