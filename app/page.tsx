@@ -1,8 +1,11 @@
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const services = [
   {
+    photo: "/images/services/lawn-care.jpg",
+    photoAlt: "Zero-turn mower creating perfect stripes on a green lawn",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
         <path strokeLinecap="round" strokeLinejoin="round" d="M3 19h18M7 19V14c-1-1-1-3 0-5M12 19V12c-1-2-1-4 0-6M17 19V14c1-1 1-3 0-5" />
@@ -13,6 +16,8 @@ const services = [
       "Mowing, edging, trimming, and blowing on a schedule that keeps your lawn healthy and sharp all season.",
   },
   {
+    photo: "/images/services/mulching.jpg",
+    photoAlt: "Freshly mulched curved driveway island bed with shaped shrubs",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
         <path strokeLinecap="round" d="M3 9h18M3 13h18M3 17h18" />
@@ -23,6 +28,8 @@ const services = [
       "Fresh mulch to clean up your beds, lock in moisture, and keep the weeds down.",
   },
   {
+    photo: "/images/services/cleanups.jpg",
+    photoAlt: "Crew loading brush and debris clippings into a trailer",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
         <path strokeLinecap="round" strokeLinejoin="round" d="M12 21V14M12 14c-2 0-6-3-6-8a6 6 0 0 1 12 0c0 5-4 8-6 8z" />
@@ -33,6 +40,8 @@ const services = [
       "Clearing leaves, debris, and yard waste so your property stays tidy through the seasons.",
   },
   {
+    photo: "/images/services/gutters.jpg",
+    photoAlt: "Crew member on tall ladder working at height with WGLC trailer visible",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
         <path strokeLinecap="round" strokeLinejoin="round" d="M3 11.5L12 4l9 7.5M5 11.5V19h14v-7.5M10 19v-4h4v4" />
@@ -44,6 +53,8 @@ const services = [
       "Clearing your gutters to protect your home from water damage, pests, and roof problems.",
   },
   {
+    photo: "/images/services/shrubs.jpg",
+    photoAlt: "Crew member in branded WGLC shirt using pole hedge trimmer on large shrub",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8">
         <path strokeLinecap="round" strokeLinejoin="round" d="M5 18h14M7 18a5 5 0 0 1 10 0M5 14a7 7 0 0 1 14 0" />
@@ -83,18 +94,26 @@ export default function Home() {
       <Navbar />
 
       {/* Hero */}
-      <section className="bg-green-50 py-24 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+      <section className="relative h-[85vh] min-h-[520px] flex items-center justify-center">
+        <Image
+          src="/images/hero.jpg"
+          alt="Stunning riverfront lawn at sunrise through live oak trees — Wicked Good Lawn Care"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/55" />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
+          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-6 drop-shadow-lg">
             Veteran-owned lawn care that shows up and does it right.
           </h1>
-          <p className="text-lg sm:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-white/90 mb-10 max-w-2xl mx-auto">
             Serving Alachua County and the surrounding area. Reliable, detailed, and easy to reach. Excellence starts at the root.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
             <a
-              href="#contact"
-              className="bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
+              href="/#contact"
+              className="bg-green-600 hover:bg-green-500 text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
             >
               Get a Free Quote
             </a>
@@ -102,13 +121,13 @@ export default function Home() {
               href="https://www.measuremylawn.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="border-2 border-green-600 text-green-700 hover:bg-green-100 font-bold px-8 py-4 rounded-xl text-lg transition-colors"
+              className="border-2 border-white text-white hover:bg-white/20 font-bold px-8 py-4 rounded-xl text-lg transition-colors"
             >
               Measure My Lawn
             </a>
             <a
               href="tel:3522831966"
-              className="border-2 border-gray-300 text-gray-700 hover:bg-gray-100 font-bold px-8 py-4 rounded-xl text-lg transition-colors"
+              className="border-2 border-white/70 text-white/90 hover:bg-white/20 font-bold px-8 py-4 rounded-xl text-lg transition-colors"
             >
               Call or Text (352) 283-1966
             </a>
@@ -126,11 +145,22 @@ export default function Home() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="bg-green-50 border border-green-100 rounded-2xl p-6 hover:shadow-md transition-shadow"
+                className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow"
               >
-                <div className="text-green-600 mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{service.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
+                <div className="relative h-48">
+                  <Image
+                    src={service.photo}
+                    alt={service.photoAlt}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="text-green-600 mb-3">{service.icon}</div>
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">{service.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -139,36 +169,60 @@ export default function Home() {
 
       {/* About */}
       <section id="about" className="py-20 px-4 bg-gray-50">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-extrabold text-gray-900 mb-8">About Wicked Good</h2>
-          <div className="space-y-5 text-gray-700 text-lg leading-relaxed">
-            <p>
-              I&apos;m Brandon Labonte, owner of Wicked Good Lawn Care. I&apos;m an Army veteran, a husband, a dad, and a granddad, and I spent years in HR before I started this company in 2021.
-            </p>
-            <p>
-              I run it on the same things the Army and that career taught me. Show up when you say you will. Pay attention to the details. Talk to people straight.
-            </p>
-            <p>
-              We take care of everything from small neighborhood lawns to larger properties, HOAs, and commercial spaces. Every yard gets treated like it&apos;s my own, because my name is on it. We&apos;re not the biggest crew in town and we&apos;re not trying to be. What we are is reliable, detailed, and easy to get ahold of. If something looks off in your yard, you&apos;ll hear it from us first.
-            </p>
-          </div>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-extrabold text-gray-900 mb-8">About Wicked Good</h2>
+              <div className="space-y-5 text-gray-700 text-lg leading-relaxed">
+                <p>
+                  I&apos;m Brandon Labonte, owner of Wicked Good Lawn Care. I&apos;m an Army veteran, a husband, a dad, and a granddad, and I spent years in HR before I started this company in 2021.
+                </p>
+                <p>
+                  I run it on the same things the Army and that career taught me. Show up when you say you will. Pay attention to the details. Talk to people straight.
+                </p>
+                <p>
+                  We take care of everything from small neighborhood lawns to larger properties, HOAs, and commercial spaces. Every yard gets treated like it&apos;s my own, because my name is on it. We&apos;re not the biggest crew in town and we&apos;re not trying to be. What we are is reliable, detailed, and easy to get ahold of. If something looks off in your yard, you&apos;ll hear it from us first.
+                </p>
+              </div>
 
-          {/* Why folks stick with us */}
-          <div className="mt-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Folks Stick With Us</h3>
-            <ul className="space-y-4">
-              {[
-                "Veteran-owned and insured. Certificate of insurance available on request.",
-                "No contracts. Simple monthly billing.",
-                "We treat your lawn like our own.",
-                "Easy to reach, and we actually communicate.",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-3">
-                  <CheckIcon />
-                  <span className="text-gray-700">{item}</span>
-                </li>
-              ))}
-            </ul>
+              <div className="mt-10">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Folks Stick With Us</h3>
+                <ul className="space-y-4">
+                  {[
+                    "Veteran-owned and insured. Certificate of insurance available on request.",
+                    "No contracts. Simple monthly billing.",
+                    "We treat your lawn like our own.",
+                    "Easy to reach, and we actually communicate.",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <CheckIcon />
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/images/about-brandon.jpg"
+                  alt="Brandon Labonte, owner of Wicked Good Lawn Care"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+              <div className="relative h-52 rounded-2xl overflow-hidden shadow-lg">
+                <Image
+                  src="/images/fleet.jpg"
+                  alt="Full Wicked Good Lawn Care fleet — both trucks and branded trailers"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -263,7 +317,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
             <a
-              href="#contact"
+              href="/#contact"
               className="border-2 border-white text-white hover:bg-green-600 font-semibold px-6 py-3 rounded-xl transition-colors"
             >
               Get a Free Quote

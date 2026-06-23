@@ -28,11 +28,11 @@ export default function Footer() {
           {/* Logo + contact */}
           <div className="md:col-span-2">
             <Image
-              src="/logo.png"
+              src="/wglc-logo-white.png"
               alt="Wicked Good Lawn Care"
               width={200}
               height={80}
-              className="h-12 w-auto object-contain brightness-0 invert mb-4"
+              className="h-12 w-auto object-contain mb-4"
             />
             <ul className="space-y-3 text-sm text-green-300">
               <li>
@@ -58,27 +58,18 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#services" className="text-green-300 hover:text-white transition-colors">Services</a></li>
-              <li><a href="#about" className="text-green-300 hover:text-white transition-colors">About</a></li>
-              <li><a href="#reviews" className="text-green-300 hover:text-white transition-colors">Reviews</a></li>
-              <li><a href="#contact" className="text-green-300 hover:text-white transition-colors">Get a Quote</a></li>
+              <li><a href="/#services" className="text-green-300 hover:text-white transition-colors">Services</a></li>
+              <li><a href="/#about" className="text-green-300 hover:text-white transition-colors">About</a></li>
+              <li><a href="/gallery" className="text-green-300 hover:text-white transition-colors">Gallery</a></li>
+              <li><a href="/blog" className="text-green-300 hover:text-white transition-colors">Blog</a></li>
+              <li><a href="/#contact" className="text-green-300 hover:text-white transition-colors">Get a Quote</a></li>
               <li>
-                <a
-                  href="https://www.measuremylawn.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-300 hover:text-white transition-colors"
-                >
+                <a href="https://www.measuremylawn.com/" target="_blank" rel="noopener noreferrer" className="text-green-300 hover:text-white transition-colors">
                   Measure My Lawn
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.getsunday.com/custom-lawn-plan/?coupon=wickedgood25"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-300 hover:text-white transition-colors"
-                >
+                <a href="https://www.getsunday.com/custom-lawn-plan/?coupon=wickedgood25" target="_blank" rel="noopener noreferrer" className="text-green-300 hover:text-white transition-colors">
                   Shop Sunday (25% off)
                 </a>
               </li>
@@ -89,56 +80,11 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-3">Follow Us</h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <a
-                  href="https://www.facebook.com/wickedgoodlawn/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-300 hover:text-white transition-colors"
-                >
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/wickedgoodlawn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-300 hover:text-white transition-colors"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://www.x.com/wickedgoodlawn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-300 hover:text-white transition-colors"
-                >
-                  X
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UCYKgQq_K6d2OIjGhrDaOvVQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-300 hover:text-white transition-colors"
-                >
-                  YouTube
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.tiktok.com/@wickedgoodlawn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-green-300 hover:text-white transition-colors"
-                >
-                  TikTok
-                </a>
-              </li>
+              <li><a href="https://www.facebook.com/wickedgoodlawn/" target="_blank" rel="noopener noreferrer" className="text-green-300 hover:text-white transition-colors">Facebook</a></li>
+              <li><a href="https://www.instagram.com/wickedgoodlawn" target="_blank" rel="noopener noreferrer" className="text-green-300 hover:text-white transition-colors">Instagram</a></li>
+              <li><a href="http://www.x.com/wickedgoodlawn" target="_blank" rel="noopener noreferrer" className="text-green-300 hover:text-white transition-colors">X</a></li>
+              <li><a href="https://www.youtube.com/channel/UCYKgQq_K6d2OIjGhrDaOvVQ" target="_blank" rel="noopener noreferrer" className="text-green-300 hover:text-white transition-colors">YouTube</a></li>
+              <li><a href="https://www.tiktok.com/@wickedgoodlawn" target="_blank" rel="noopener noreferrer" className="text-green-300 hover:text-white transition-colors">TikTok</a></li>
             </ul>
           </div>
         </div>

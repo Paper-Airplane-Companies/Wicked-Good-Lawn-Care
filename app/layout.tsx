@@ -8,9 +8,17 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.wickedgoodlawn.com"),
   title: "Wicked Good Lawn Care | Veteran-Owned Lawn Care in Alachua County, FL",
   description:
     "Veteran-owned, insured lawn care serving Alachua County and the surrounding area. Mowing, mulching, seasonal cleanups, gutter cleaning, and shrub trimming. Get a free quote today.",
+  openGraph: {
+    title: "Wicked Good Lawn Care | Veteran-Owned Lawn Care in Alachua County, FL",
+    description:
+      "Veteran-owned, insured lawn care serving Alachua County and the surrounding area. Mowing, mulching, seasonal cleanups, gutter cleaning, and shrub trimming.",
+    images: [{ url: "/wglc-og-image.png" }],
+    type: "website",
+  },
 };
 
 export default function RootLayout({

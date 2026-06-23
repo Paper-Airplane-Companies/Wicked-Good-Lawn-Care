@@ -8,7 +8,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center">
             <Image
-              src="/logo.png"
+              src="/wglc-logo-dark.png"
               alt="Wicked Good Lawn Care"
               width={200}
               height={80}
@@ -17,23 +17,26 @@ export default function Navbar() {
             />
           </Link>
 
-          <nav className="hidden md:flex items-center gap-8">
-            <Link href="#services" className="text-gray-600 hover:text-green-700 font-medium transition-colors">
+          <nav className="hidden md:flex items-center gap-7">
+            <Link href="/#services" className="text-gray-600 hover:text-green-700 font-medium transition-colors">
               Services
             </Link>
-            <Link href="#about" className="text-gray-600 hover:text-green-700 font-medium transition-colors">
+            <Link href="/#about" className="text-gray-600 hover:text-green-700 font-medium transition-colors">
               About
             </Link>
-            <Link href="#reviews" className="text-gray-600 hover:text-green-700 font-medium transition-colors">
-              Reviews
+            <Link href="/gallery" className="text-gray-600 hover:text-green-700 font-medium transition-colors">
+              Gallery
             </Link>
-            <Link href="#contact" className="text-gray-600 hover:text-green-700 font-medium transition-colors">
+            <Link href="/blog" className="text-gray-600 hover:text-green-700 font-medium transition-colors">
+              Blog
+            </Link>
+            <Link href="/#contact" className="text-gray-600 hover:text-green-700 font-medium transition-colors">
               Contact
             </Link>
           </nav>
 
           <Link
-            href="#contact"
+            href="/#contact"
             className="bg-green-600 hover:bg-green-700 text-white font-semibold px-5 py-2 rounded-lg transition-colors text-sm"
           >
             Get a Free Quote
