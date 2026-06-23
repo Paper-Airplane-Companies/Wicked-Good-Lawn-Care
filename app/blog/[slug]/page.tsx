@@ -48,12 +48,17 @@ export default async function BlogPostPage({ params }: Props) {
           <header className="mb-8">
             <h1 className="text-4xl font-bold text-green-800 mb-3">{post.title}</h1>
             <p className="text-gray-500 text-sm">
-              By {post.author} &mdash;{' '}
-              {new Date(post.date + 'T12:00:00').toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-              })}
+              By {post.author}
+              {post.date && (
+                <>
+                  {' '}&mdash;{' '}
+                  {new Date(post.date + 'T12:00:00').toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                  })}
+                </>
+              )}
             </p>
           </header>
 

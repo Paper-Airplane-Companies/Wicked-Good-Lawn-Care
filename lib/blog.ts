@@ -16,6 +16,31 @@ export interface BlogPost {
   contentHtml?: string
 }
 
+function parseDate(raw: string): string {
+  if (!raw || !raw.trim()) return ''
+  const d = new Date(raw)
+  if (!isNaN(d.getTime())) return raw
+  // Handle "Month DD, YYYY" format (e.g. "April 15, 2024")
+  const d2 = new Date(raw + ' UTC')
+  if (!isNaN(d2.getTime())) return d2.toISOString().split('T')[0]
+  return ''
+}
+
+function extractExcerpt(content: string): string {
+  const text = content
+    .replace(/^---+\s*$/gm, '')               // strip horizontal rules / stray --- separators
+    .replace(/^#+\s.+$/gm, '')                // strip headings
+    .replace(/\*\*([^*]+)\*\*/g, '$1')        // strip **bold**, keep text
+    .replace(/\*([^*]+)\*/g, '$1')            // strip *italic*, keep text
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1') // strip [links](url), keep text
+    .trim()
+
+  const paragraphs = text.split(/\n\n+/)
+  const first = paragraphs.find((p) => p.trim().length > 20) || ''
+  const flat = first.replace(/\s+/g, ' ').trim()
+  return flat.substring(0, 200) + (flat.length > 200 ? '...' : '')
+}
+
 export function getAllPostSlugs(): string[] {
   const fileNames = fs.readdirSync(postsDirectory)
   return fileNames
@@ -31,26 +56,22 @@ export function getAllPosts(): Omit<BlogPost, 'contentHtml'>[] {
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const { data, content } = matter(fileContents)
 
-    const excerpt =
-      data.excerpt ||
-      content
-        .replace(/^#+\s.+$/m, '')
-        .replace(/\*\*/g, '')
-        .trim()
-        .split('\n\n')[0]
-        .substring(0, 200) + '...'
-
     return {
       slug,
       title: data.title || '',
       author: data.author || 'Brandon Labonte',
-      date: data.date || '',
-      excerpt,
+      date: parseDate(data.date || ''),
+      excerpt: data.excerpt || extractExcerpt(content),
       content,
     }
   })
 
-  return posts.sort((a, b) => (a.date < b.date ? 1 : -1))
+  return posts.sort((a, b) => {
+    if (!a.date && !b.date) return 0
+    if (!a.date) return 1
+    if (!b.date) return -1
+    return a.date < b.date ? 1 : -1
+  })
 }
 
 export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
@@ -62,21 +83,12 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
     const processedContent = await remark().use(html).process(content)
     const contentHtml = processedContent.toString()
 
-    const excerpt =
-      data.excerpt ||
-      content
-        .replace(/^#+\s.+$/m, '')
-        .replace(/\*\*/g, '')
-        .trim()
-        .split('\n\n')[0]
-        .substring(0, 200) + '...'
-
     return {
       slug,
       title: data.title || '',
       author: data.author || 'Brandon Labonte',
-      date: data.date || '',
-      excerpt,
+      date: parseDate(data.date || ''),
+      excerpt: data.excerpt || extractExcerpt(content),
       content,
       contentHtml,
     }

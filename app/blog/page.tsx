@@ -33,12 +33,17 @@ export default function BlogPage() {
                 </h2>
               </Link>
               <p className="text-sm text-gray-500 mb-3">
-                {post.author} &mdash;{' '}
-                {new Date(post.date + 'T12:00:00').toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric',
-                })}
+                {post.author}
+                {post.date && (
+                  <>
+                    {' '}&mdash;{' '}
+                    {new Date(post.date + 'T12:00:00').toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })}
+                  </>
+                )}
               </p>
               <p className="text-gray-700 leading-relaxed mb-4">{post.excerpt}</p>
               <Link
