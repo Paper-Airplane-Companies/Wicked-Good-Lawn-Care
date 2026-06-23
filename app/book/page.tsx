@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -17,18 +18,15 @@ export default function BookPage() {
         <section className="bg-green-900 py-20 px-4">
           <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center gap-12">
             {/* Book cover */}
-            <div className="shrink-0 w-48 h-72 rounded-lg shadow-2xl border-l-8 border-green-500 bg-green-950 flex flex-col items-center justify-center p-6 text-center">
-              <p className="text-green-400 text-[9px] font-bold uppercase tracking-widest mb-2">
-                Playbook for a
-              </p>
-              <p className="text-white font-extrabold text-xl leading-tight mb-3">
-                Wicked Good Lawn
-              </p>
-              <div className="w-8 h-px bg-green-500 mb-3" />
-              <p className="text-green-200 text-[11px] leading-snug mb-4">
-                Contemporary Lawn Care Advice for Savvy Homeowners
-              </p>
-              <p className="text-green-400 text-xs">Brandon Labonte</p>
+            <div className="shrink-0 relative w-48 h-72 rounded-lg shadow-2xl overflow-hidden">
+              <Image
+                src="/images/book-cover.jpg"
+                alt="Playbook for a Wicked Good Lawn book cover"
+                fill
+                className="object-cover"
+                sizes="192px"
+                priority
+              />
             </div>
 
             {/* Info */}
